@@ -25,7 +25,7 @@
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <x-nav-link href="/" >Home</x-nav-link>
-              <x-nav-link href="/about" >About</x-nav-link>
+              <x-nav-link href="/jobs" >Jobs</x-nav-link>
               <x-nav-link href="/contact"  >Contact</x-nav-link>
 
             </div>
@@ -116,7 +116,7 @@
 
   <header class="bg-white shadow">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{$heading}}</h1>
     </div>
   </header>
   <main>

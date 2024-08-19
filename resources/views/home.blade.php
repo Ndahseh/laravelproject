@@ -3,7 +3,5 @@
         Home Page
     </x-slot:heading>
 
-    @foreach ($jobs as $job)
-        <li><strong>{{ $job ['title'] }}</strong> : Pays {{ $job ['salary'] }} Per Year.</li>
-    @endforeach
+<h1> Welcome to the home page. </h1>
 </x-layout>
