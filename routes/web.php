@@ -7,16 +7,14 @@ use App\Models\Car;
 
 // Home page route
 Route::get('/', function () {
-
     return view('home');
 });
-
 
 
 // Job Page route
 Route::get('/jobs', function () {
     return view('jobs',[
-    'jobs' => Job::all()
+        'jobs' => Job::all()
     ]);
 });
 
@@ -24,7 +22,7 @@ Route::get('/jobs', function () {
 Route::get('/jobs/{id}', function ($id) {
     $job = Job::find($id);
 
-        return view('job', ['job' => $job]);
+    return view('job', ['job' => $job]);
 });
 
 
@@ -39,7 +37,7 @@ Route::get('/cars', function () {
 Route::get('/cars/{id}', function ($id) {
     $car = Car::find($id);
 
-        return view('car', ['car' => $car]);
+    return view('car', ['car' => $car]);
 });
 
 
